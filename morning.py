@@ -12,7 +12,7 @@ Generate 3 UPSC GS1 Society + 3 GS4 Ethics questions.
 """
 
 res = client.chat.completions.create(
-    model="gpt-5.3",
+    model="gpt-4o-mini",
     messages=[{"role": "user", "content": prompt}]
 )
 
