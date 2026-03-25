@@ -27,3 +27,6 @@ chat_id = os.getenv("CHAT_ID")
 url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
 
 requests.post(url, data={"chat_id": chat_id, "text": text})
+print("API KEY:", os.getenv("OPENAI_API_KEY"))
+print("BOT:", os.getenv("BOT_TOKEN"))
+print("CHAT:", os.getenv("CHAT_ID"))
